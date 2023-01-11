@@ -1,8 +1,9 @@
+import { MainPage } from "./components/MainPage"
 
 export const RickAndMortyApp = () => {
   return (
-    <div>
-      hello world
-    </div>
+    <>
+        <MainPage />
+    </>
   )
 }
