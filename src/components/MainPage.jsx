@@ -16,11 +16,13 @@ export const MainPage = () => {
 
     return (
         <>
-            <h1>Rick and Morty App</h1>
-            <p>Created by Juan Ignacio Giacobbe</p>
+            <div className="title-container">
+                <h1>Rick and Morty App</h1>
+                <p>Created by Juan Ignacio Giacobbe</p>
+            </div>
 
             {
-                isLoading && <h2>Loading items...</h2>
+                isLoading && <h2>Loading characters...</h2>
             }
 
             <CharactersGrid characters={ characters }/>

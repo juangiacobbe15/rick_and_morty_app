@@ -2,7 +2,7 @@ import { CharacterCard } from "./CharacterCard";
 
 export const CharactersGrid = ({ characters }) => {
     return (
-        <>
+        <div className="characters-grid">
             {
                 characters.map(character => (
                     <CharacterCard 
@@ -11,6 +11,6 @@ export const CharactersGrid = ({ characters }) => {
                     />
                 ))
             }
-        </>
+        </div>
     );
 }

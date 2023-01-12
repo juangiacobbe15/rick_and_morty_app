@@ -1,3 +1,5 @@
+import '../styles/pagesHandler.css';
+
 export const PagesHandler = ({ onNewPage, initialPage = 1}) => {
     
     const incrementPage = () => {
@@ -13,10 +15,10 @@ export const PagesHandler = ({ onNewPage, initialPage = 1}) => {
     }
 
     return (
-        <>
-            <button onClick={ decrementPage }>prev</button>
-            <p>page { initialPage }</p>
-            <button onClick={ incrementPage }>next</button>
-        </>
+        <div className="pages-handler-container">
+            <button onClick={ decrementPage } className='btn'>prev</button>
+            <button className='btn'> { initialPage }</button>
+            <button onClick={ incrementPage } className='btn'>next</button>
+        </div>
     );
 }
