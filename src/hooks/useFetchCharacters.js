@@ -14,8 +14,7 @@ export const UseFetchCharacters = ( pageNumber ) => {
 
     useEffect( () => {
         getCharactersInfo();
-    }, []);
-
+    }, [pageNumber]);
 
     return {
         characters,

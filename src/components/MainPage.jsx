@@ -9,7 +9,7 @@ export const MainPage = () => {
     const [currentPage, setCurrentPage] = useState(1);
 
     const { characters, isLoading } = UseFetchCharacters(currentPage);
-
+    
     const onChangePage = (page) => {
         setCurrentPage(page);
     }
